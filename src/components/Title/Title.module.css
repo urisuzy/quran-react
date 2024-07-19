@@ -1,0 +1,18 @@
+.contentTitle {
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.titleText {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.captionText {
+  font-family: "El Messiri", sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 2;
+  font-weight: 400;
+}

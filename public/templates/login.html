@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scripts/style.css" />
+  </head>
+
+  <body>
+    <!-- navigasi -->
+    <div
+      class="section-navbar h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 "
+    >
+      <div class="navbar-nav">
+        <div
+          class="container mx-auto flex flex-wrap flex-row items-center justify-between"
+        >
+          <a href="" class="flex font-medium items-center">
+            <img src="assets/images/logo.png" class="img-logo" alt="img-logo" />
+          </a>
+          <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+            <img src="assets/images/burger.svg" alt="" srcset="">
+          </label>
+          <input class="hidden" type="checkbox" id="menu-toggle" />
+          <div
+            class="hidden lg:flex lg:items-center lg:w-auto w-full"
+            id="menu"
+          >
+            <button
+              class="btn-login text-white items-center border-0 py-3 px-8 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-title">
+      <div class="container mx-auto flex flex-col items-center">
+        <div class="text-center">
+          <h4 class="title-text">
+            Al-Qur’an Digital - Qur’an Tematik - Hadits Tematik 
+          </h4>
+          <p class="caption-text">
+            Dikembangkan  Oleh Universitas KH Ruhiat Cipasung
+            <br>Kementerian Agama Republik Indonesia
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="content-form flex items-center justify-center mb-6">
+      <div class="bg-white p-4 rounded-lg shadow-lg max-w-sm w-full">
+
+        <form>
+     
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email Address <span class="text-red-600">*</span></label>
+                <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="admin@gmail.com">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 text-sm font-semibold mb-2">Password <span class="text-red-600">*</span></label>
+                <input type="password" id="password" class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required placeholder="••••••••">
+             
+            </div>
+            <button type="submit" class="w-full px-4 py-4 btn-login font-bold">Login</button>
+            <p class="text-gray-600 text-xs text-center mt-4">
+                Anda belum punya akun ?
+                <a href="#" class="text-black hover:underline register">Register</a>.
+            </p>
+        </form>
+    </div>
+    </div>
+ 
+
+    <div class="content-footer mt-10 mb-10">
+      <footer class="text-center">
+        Copyright 2024 - All Rights Reserved - DIGCIP
+      </footer>
+    </d>
+  </body>
+</html>

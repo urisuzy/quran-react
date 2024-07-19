@@ -1,0 +1,17 @@
+.formInput {
+  padding: 16px;
+  border: 1px solid #000;
+}
+
+.btnSearch{
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  padding: 16px;
+  font-weight: bold;
+}
+.btnSearch:hover{
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}

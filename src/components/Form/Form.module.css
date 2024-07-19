@@ -1,0 +1,14 @@
+.btnLogin {
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.btnLogin:hover {
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}

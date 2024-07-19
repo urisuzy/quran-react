@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scripts/detail.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 
+</head>
+
+<body>
+    
+    <!-- navigasi -->
+    <div class="back-nav text-center items-center flex flex-row py-2 px-6">
+        <i class="fas fa-chevron-left text-white  text-4xl mr-2" style="font-size: 30px;"></i>
+        <div class="info-kitab-card text-center rounded px-4 py-4 mx-auto">
+            <img src="assets/images/logo.png" class="w-20" alt="" srcset="">
+        </div>
+        <i class="fas fa-chevron-right text-white  text-4xl mr-2" style="font-size: 30px;"></i>
+   
+    </div>
+
+    <!-- filter -->
+    <div class="filter justify-center px-4 py-2">
+        <div class="detail mt-4 mb-4">
+            <div class="max-w-6xl mx-auto ">
+                <div class="flex md:flex-row flex-col md:justify-between gap-y-4">
+
+                    <div class="flex flex-row gap-x-4">
+                        <div class="flex flex-col ">
+                            <p class="font-bold">Surat</p>
+                            <div class="relative inline-block text-left ">
+                                <button type="button" class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500" id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                    Surat
+                                </button>
+                                <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10 dropdown-menu" id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                                    <div class="py-1" role="none">
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 1</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 2</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 3</a>
+                                        <!-- Add more items here if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col ">
+                            <p class="font-bold">Dari Surat</p>
+                            <div class="relative inline-block text-left ">
+                                <button type="button" class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500" id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                    Ayat ke-1
+                                </button>
+                                <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10 dropdown-menu" id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                                    <div class="py-1" role="none">
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 1</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 2</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 3</a>
+                                        <!-- Add more items here if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col ">
+                            <p class="font-bold">Ke Surat</p>
+                            <div class="relative inline-block text-left ">
+                                <button type="button" class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500" id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                    Ayat ke-7
+                                </button>
+                                <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10 dropdown-menu" id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                                    <div class="py-1" role="none">
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 1</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 2</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 3</a>
+                                        <!-- Add more items here if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-end gap-x-4 ">
+                            
+                        <div class="flex flex-col ">
+                            <p class="font-bold">Tampilan</p>
+                            <div class="relative inline-block text-left ">
+                                <button type="button" class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500" id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                    Per Ayat
+                                </button>
+                                <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10 dropdown-menu" id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                                    <div class="py-1" role="none">
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 1</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 2</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 3</a>
+                                        <!-- Add more items here if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col ">
+                            <p class="font-bold">Mode Baca</p>
+                            <div class="relative inline-block text-left ">
+                                <button type="button" class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500" id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                    Lihat Detail
+                                </button>
+                                <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10 dropdown-menu" id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                                    <div class="py-1" role="none">
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 1</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 2</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 3</a>
+                                        <!-- Add more items here if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col ">
+                            <p class="font-bold">Metode Kitabah</p>
+                            <div class="relative inline-block text-left ">
+                                <button type="button" class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500" id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                    Lihat Detail
+                                </button>
+                                <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10 dropdown-menu" id="dropdown-menu" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                                    <div class="py-1" role="none">
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 1</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 2</a>
+                                        <a href="#" class="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Item 3</a>
+                                        <!-- Add more items here if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+                <div class="mt-4">
+                    <hr class="border-t border-black ">
+                </div>
+            </div>
+        </div>        
+
+    </div>
+
+    <div class="detail-kitab justify-center px-2">
+        <div class="detail-card max-w-6xl mx-auto flex flex-row  mt-8">
+            <div class="grid grid-cols-1 gap-y-4 w-full">
+                <!--Card 1-->
+                <div class="flex flex-col">
+
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                1
+                            </p>
+                        </div>
+                        <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                            <p class="text-2xl text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                            </p>
+                        </div>
+
+
+                    </div>
+                 
+            
+                    <div class="description mt-4">
+                        <p class="latin-text">
+                            Bismillāhir-raḥmānir-raḥīm(i).
+                        </p>
+                        <small class="terjemahan-text">
+                            Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+                        </small>
+            
+                        <div class="flex flex-row gap-x-4 items-center function mt-4">
+                            <img src="./assets/images/play-svg.svg" alt="play-button">
+                            <img src="./assets/images/copy-svg.svg" alt="copy-button">
+                            <img src="./assets/images/note-svg.svg" alt="tafsir-button">
+                            <img src="./assets/images/save-svg.svg" alt="save-button">
+                        </div>
+                    </div>
+
+                    <div class=" mt-4">
+                        <hr class="border-t border-black ">
+                    </div>
+                </div>
+                   <!--Card 1-->
+                <div class="flex flex-col">
+
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                2
+                            </p>
+                        </div>
+                        <div class="arab-text text-left px-4 py-4 rounded-xl bg-blue-100 ">
+                            <p class="text-2xl text-right">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ
+                            </p>
+                        </div>
+
+
+                    </div>
+                 
+            
+                    <div class="description mt-4">
+                        <p class="latin-text">
+                            Al-ḥamdu lillāhi rabbil-‘ālamīn(a).
+                        </p>
+                        <small class="terjemahan-text">
+                            Segala puji bagi Allah, Tuhan1) semesta alam
+                        </small>
+            
+                        <div class="flex flex-row gap-x-4 items-center function mt-4">
+                            <img src="./assets/images/play-svg.svg" alt="play-button">
+                            <img src="./assets/images/copy-svg.svg" alt="copy-button">
+                            <img src="./assets/images/note-svg.svg" alt="tafsir-button">
+                            <img src="./assets/images/save-svg.svg" alt="save-button">
+                        </div>
+                    </div>
+
+                    <div class=" mt-4">
+                        <hr class="border-t border-black ">
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="arab-text text-left px-4 py-4 rounded-xl bg-blue-100 ">
+                            <p class="text-2xl text-right">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                            </p>
+                        </div>
+
+
+                    </div>
+                 
+            
+                    <div class="description mt-4">
+                        <p class="latin-text">
+                            Bismillāhir-raḥmānir-raḥīm(i).
+                        </p>
+                        <small class="terjemahan-text">
+                            Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+                        </small>
+            
+                        <div class="flex flex-row gap-x-4 items-center function mt-4">
+                            <img src="./assets/images/play-svg.svg" alt="play-button">
+                            <img src="./assets/images/copy-svg.svg" alt="copy-button">
+                            <img src="./assets/images/note-svg.svg" alt="tafsir-button">
+                            <img src="./assets/images/save-svg.svg" alt="save-button">
+                        </div>
+                    </div>
+
+                    <div class=" mt-4">
+                        <hr class="border-t border-black ">
+                    </div>
+                </div>
+                <!-- Add more cards here if needed -->
+            </div>
+            
+        </div>
+  
+    </div>
+
+    <footer class="text-center mt-20">
+        Copyright 2024 - All Rights Reserved - DIGCIP
+    </footer>
+
+</body>
+
+</html>

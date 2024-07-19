@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/scripts/detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navigasi -->
+    <div class="back-nav text-center items-center flex flex-row py-2 px-6">
+      <i
+        class="fas fa-chevron-left text-white text-4xl mr-2"
+        style="font-size: 30px"
+      ></i>
+      <div class="info-kitab-card text-center rounded px-4 py-4 mx-auto">
+        <img src="assets/images/logo.png" class="w-20" alt="" srcset="" />
+      </div>
+      <i
+        class="fas fa-chevron-right text-white text-4xl mr-2"
+        style="font-size: 30px"
+      ></i>
+    </div>
+
+    <!-- filter -->
+    <div class="filter justify-center px-4 py-2">
+      <div class="detail mt-4 mb-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex md:flex-row flex-col md:justify-between gap-y-4">
+            <div class="flex flex-row gap-x-4">
+              <div class="flex flex-col">
+                <p class="font-bold">Pilih Surat</p>
+                <!-- Dropdown -->
+                <div x-data="{ open: false }" class="relative">
+                  <button
+                    @click="open = !open"
+                    type="button"
+                    class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500"
+                  >
+                    AL-Fatihah
+                  </button>
+                  <div
+                    x-show="open"
+                    @click.away="open = false"
+                    class="absolute mt-1 w-full rounded-md bg-white shadow-lg dropdown-menu"
+                  >
+                    <!-- Dropdown content -->
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 3</a
+                    >
+                    <!-- Add more items here if needed -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="font-bold">Dari Surat</p>
+                <div x-data="{ open: false }" class="relative">
+                  <button
+                    @click="open = !open"
+                    type="button"
+                    class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500"
+                  >
+                    Surat ke - 1
+                  </button>
+                  <div
+                    x-show="open"
+                    @click.away="open = false"
+                    class="absolute mt-1 w-full rounded-md bg-white shadow-lg dropdown-menu"
+                  >
+                    <!-- Dropdown content -->
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 3</a
+                    >
+                    <!-- Add more items here if needed -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="font-bold">Ke Surat</p>
+                <div x-data="{ open: false }" class="relative">
+                  <button
+                    @click="open = !open"
+                    type="button"
+                    class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500"
+                  >
+                    Surat ke - 7
+                  </button>
+                  <div
+                    x-show="open"
+                    @click.away="open = false"
+                    class="absolute mt-1 w-full rounded-md bg-white shadow-lg dropdown-menu"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Item 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-row justify-end gap-x-4">
+              <div class="flex flex-col">
+                <p class="font-bold">Tampilan</p>
+                <div x-data="{ open: false }" class="relative">
+                  <button
+                    @click="open = !open"
+                    type="button"
+                    class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500"
+                  >
+                    Lihat Detail
+                  </button>
+                  <div
+                    x-show="open"
+                    @click.away="open = false"
+                    class="absolute mt-1 w-full rounded-md bg-white shadow-lg dropdown-menu"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Per Ayat</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="font-bold">Mode Baca</p>
+                <div x-data="{ open: false }" class="relative">
+                  <button
+                    @click="open = !open"
+                    type="button"
+                    class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500"
+                  >
+                    Lihat Detail
+                  </button>
+                  <div
+                    x-show="open"
+                    @click.away="open = false"
+                    class="absolute mt-1 w-full rounded-md bg-white shadow-lg dropdown-menu"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Semua Bagian</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="font-bold">Metode Kitabah</p>
+                <div x-data="{ open: false }" class="relative">
+                  <button
+                    @click="open = !open"
+                    type="button"
+                    class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent focus:ring-blue-500"
+                  >
+                    Lihat Detail
+                  </button>
+                  <div
+                    x-show="open"
+                    @click.away="open = false"
+                    class="absolute mt-1 w-full rounded-md bg-white shadow-lg dropdown-menu"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Metode Isyarat</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <hr class="border-t border-black" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-kitab justify-center px-2">
+      <div class="detail-card max-w-6xl mx-auto flex flex-row mt-8">
+        <div class="grid grid-cols-1 gap-y-4 w-full">
+          <!--Card 1-->
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-between items-center">
+              <div
+                class="list-number py-4 rounded-3xl border-black items-center"
+              >
+                <p class="font-bold text-2xl">1</p>
+              </div>
+              <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                <p class="text-2xl text-right">
+                  بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+              </div>
+            </div>
+
+            <div class="description mt-4">
+              <p class="latin-text">Bismillāhir-raḥmānir-raḥīm(i).</p>
+              <small class="terjemahan-text">
+                Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+              </small>
+
+              <div class="flex flex-row gap-x-4 items-center function mt-4">
+                <button onclick="playButton(this)">
+                  <img
+                    src="./assets/images/play-svg.svg"
+                    alt="play-button"
+                    data-original-src="./assets/images/play-svg.svg"
+                  />
+                </button>
+
+                <button onclick="showAlert('Teks Tercopy')">
+                  <img src="./assets/images/copy-svg.svg" alt="copy-button" />
+                </button>
+
+                <button onclick="showModal()">
+                  <img src="./assets/images/note-svg.svg" alt="tafsir-button" />
+                </button>
+
+                <button onclick="showAlert('Tersimpan!')">
+                  <img src="./assets/images/save-svg.svg" alt="save-button" />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <hr class="border-t border-black" />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-between items-center">
+              <div
+                class="list-number py-4 rounded-3xl border-black items-center"
+              >
+                <p class="font-bold text-2xl">1</p>
+              </div>
+              <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                <p class="text-2xl text-right">
+                  بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+              </div>
+            </div>
+
+            <div class="description mt-4">
+              <p class="latin-text">Bismillāhir-raḥmānir-raḥīm(i).</p>
+              <small class="terjemahan-text">
+                Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+              </small>
+
+              <div class="flex flex-row gap-x-4 items-center function mt-4">
+                <button onclick="playButton(this)">
+                  <img
+                    src="./assets/images/play-svg.svg"
+                    alt="play-button"
+                    data-original-src="./assets/images/play-svg.svg"
+                  />
+                </button>
+
+                <button onclick="showAlert('Teks Tercopy')">
+                  <img src="./assets/images/copy-svg.svg" alt="copy-button" />
+                </button>
+
+                <button onclick="showModal()">
+                  <img src="./assets/images/note-svg.svg" alt="tafsir-button" />
+                </button>
+
+                <button onclick="showAlert('Tersimpan!')">
+                  <img src="./assets/images/save-svg.svg" alt="save-button" />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <hr class="border-t border-black" />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-between items-center">
+              <div
+                class="list-number py-4 rounded-3xl border-black items-center"
+              >
+                <p class="font-bold text-2xl">1</p>
+              </div>
+              <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                <p class="text-2xl text-right">
+                  بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+              </div>
+            </div>
+
+            <div class="description mt-4">
+              <p class="latin-text">Bismillāhir-raḥmānir-raḥīm(i).</p>
+              <small class="terjemahan-text">
+                Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+              </small>
+
+              <div class="flex flex-row gap-x-4 items-center function mt-4">
+                <button onclick="playButton(this)">
+                  <img
+                    src="./assets/images/play-svg.svg"
+                    alt="play-button"
+                    data-original-src="./assets/images/play-svg.svg"
+                  />
+                </button>
+
+                <button onclick="showAlert('Teks Tercopy')">
+                  <img src="./assets/images/copy-svg.svg" alt="copy-button" />
+                </button>
+
+                <button onclick="showModal()">
+                  <img src="./assets/images/note-svg.svg" alt="tafsir-button" />
+                </button>
+
+                <button onclick="showAlert('Tersimpan!')">
+                  <img src="./assets/images/save-svg.svg" alt="save-button" />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <hr class="border-t border-black" />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-between items-center">
+              <div
+                class="list-number py-4 rounded-3xl border-black items-center"
+              >
+                <p class="font-bold text-2xl">1</p>
+              </div>
+              <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                <p class="text-2xl text-right">
+                  بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+              </div>
+            </div>
+
+            <div class="description mt-4">
+              <p class="latin-text">Bismillāhir-raḥmānir-raḥīm(i).</p>
+              <small class="terjemahan-text">
+                Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+              </small>
+
+              <div class="flex flex-row gap-x-4 items-center function mt-4">
+                <button onclick="playButton(this)">
+                  <img
+                    src="./assets/images/play-svg.svg"
+                    alt="play-button"
+                    data-original-src="./assets/images/play-svg.svg"
+                  />
+                </button>
+
+                <button onclick="showAlert('Teks Tercopy')">
+                  <img src="./assets/images/copy-svg.svg" alt="copy-button" />
+                </button>
+
+                <button onclick="showModal()">
+                  <img src="./assets/images/note-svg.svg" alt="tafsir-button" />
+                </button>
+
+                <button onclick="showAlert('Tersimpan!')">
+                  <img src="./assets/images/save-svg.svg" alt="save-button" />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <hr class="border-t border-black" />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-between items-center">
+              <div
+                class="list-number py-4 rounded-3xl border-black items-center"
+              >
+                <p class="font-bold text-2xl">1</p>
+              </div>
+              <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                <p class="text-2xl text-right">
+                  بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+              </div>
+            </div>
+
+            <div class="description mt-4">
+              <p class="latin-text">Bismillāhir-raḥmānir-raḥīm(i).</p>
+              <small class="terjemahan-text">
+                Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+              </small>
+
+              <div class="flex flex-row gap-x-4 items-center function mt-4">
+                <button onclick="playButton(this)">
+                  <img
+                    src="./assets/images/play-svg.svg"
+                    alt="play-button"
+                    data-original-src="./assets/images/play-svg.svg"
+                  />
+                </button>
+
+                <button onclick="showAlert('Teks Tercopy')">
+                  <img src="./assets/images/copy-svg.svg" alt="copy-button" />
+                </button>
+
+                <button onclick="showModal()">
+                  <img src="./assets/images/note-svg.svg" alt="tafsir-button" />
+                </button>
+
+                <button onclick="showAlert('Tersimpan!')">
+                  <img src="./assets/images/save-svg.svg" alt="save-button" />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <hr class="border-t border-black" />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex flex-row justify-between items-center">
+              <div
+                class="list-number py-4 rounded-3xl border-black items-center"
+              >
+                <p class="font-bold text-2xl">1</p>
+              </div>
+              <div class="arab-text text-left px-4 py-4 rounded-xl bg-gray-100">
+                <p class="text-2xl text-right">
+                  بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+                </p>
+              </div>
+            </div>
+
+            <div class="description mt-4">
+              <p class="latin-text">Bismillāhir-raḥmānir-raḥīm(i).</p>
+              <small class="terjemahan-text">
+                Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang
+              </small>
+
+              <div class="flex flex-row gap-x-4 items-center function mt-4">
+                <button onclick="playButton(this)">
+                  <img
+                    src="./assets/images/play-svg.svg"
+                    alt="play-button"
+                    data-original-src="./assets/images/play-svg.svg"
+                  />
+                </button>
+
+                <button onclick="showAlert('Teks Tercopy')">
+                  <img src="./assets/images/copy-svg.svg" alt="copy-button" />
+                </button>
+
+                <button onclick="showModal()">
+                  <img src="./assets/images/note-svg.svg" alt="tafsir-button" />
+                </button>
+
+                <button onclick="showAlert('Tersimpan!')">
+                  <img src="./assets/images/save-svg.svg" alt="save-button" />
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <hr class="border-t border-black" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      id="modal"
+      class="hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50"
+    >
+      <div class="flex items-center justify-center min-h-screen">
+        <div class="relative bg-white w-96 p-4 rounded shadow-lg">
+          <div class="absolute top-0 right-0 p-2">
+            <button onclick="hiddenModal()">
+              <svg
+                class="w-6 h-6 text-gray-600 hover:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Tafsir</h2>
+            <p>Isi tafsir Quran di sini...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-20">
+      Copyright 2024 - All Rights Reserved - DIGCIP
+    </footer>
+
+    <script>
+      function playButton(button) {
+        var img = button.querySelector("img");
+        var imgOri = img.getAttribute("data-original-src");
+        var imgCurrent = img.getAttribute("src");
+
+        if (imgCurrent === imgOri) {
+          img.setAttribute("src", "./assets/images/play-pause.svg");
+        } else {
+          img.setAttribute("src", imgOri);
+        }
+      }
+
+      function showAlert(message) {
+        alert(message);
+      }
+
+      function showModal() {
+        document.getElementById("modal").classList.remove("hidden");
+      }
+
+      function hiddenModal() {
+        document.getElementById("modal").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>

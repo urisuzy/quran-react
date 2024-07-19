@@ -1,0 +1,37 @@
+/*? global clearing */
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.back-nav{
+    background-color: #6B5656;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+}
+
+.dropdown-menu {
+    overflow-y: auto;
+    max-height: 200px;
+    z-index: 999;
+}
+
+.detail-kitab .detail-card .list-number{
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.detail-kitab .detail-card .arab-text {
+    background-color: #fff;
+    box-shadow: 10px;
+}
+

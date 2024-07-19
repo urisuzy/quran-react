@@ -1,0 +1,11 @@
+/* Di luar file CSS module Anda */
+.tableContainerTable {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Di dalam file CSS module Anda */
+.tableContainerTable {
+  /* Tambahkan overflow-x: auto agar tabel dapat di-scroll */
+  overflow-x: auto;
+}

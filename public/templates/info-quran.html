@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/scripts/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- navigasi -->
+    <div
+        class="section-navbar h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 ">
+    </div>
+
+    <div class="content-title">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="text-center">
+                <p class="caption-text">
+                    Dikembangkan Oleh Universitas KH Ruhiat Cipasung
+                    <br>Kementerian Agama Republik Indonesia
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-kitab justify-center px-4 py-4">
+        <div class="max-w-6xl mx-auto flex flex-row justify-center">
+            <div class="info-kitab-title text-center items-center flex flex-row py-6 px-4">
+                <i class="fas fa-chevron-left text-black mt-2 mr-8" style="font-size: 64px;"></i>
+                <div class="info-kitab-card text-center rounded px-4 py-4 mx-auto">
+                    <h1 class="text-white font-bold info-title">
+                        Baca Al-Qur'an
+                    </h1>
+                    <p class="info-caption text-white">
+                        Al-Qur'an 30 Juz
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-sm mx-auto flex flex-col justify-center">
+            <div class="mb-4 mt-4">
+                <input type="cari " id="cari"
+                    class="form-input w-full px-4 py-2 border rounded-lg text-gray-700 focus:ring-blue-500" required
+                    placeholder="cari surat" />
+                <button class="w-full mt-4 btn-search">
+                    Cari
+                </button>
+            </div>
+        </div>
+
+        <div class="content-kitab mt-10">
+            <div class="max-w-6xl mx-auto ">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row items-center">
+                        <p class="font-bold">Tampilan</p>
+                        <div class="relative inline-block text-left px-4">
+                            <button type="button"
+                                class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent  focus:ring-blue-500"
+                                id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                Surat
+                            </button>
+
+                            <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden px-10"
+                                id="dropdown-menu" role="menu" aria-orientation="vertical"
+                                aria-labelledby="dropdown-button">
+                                <div class="py-1" role="none">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Item 1</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Item 2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Item 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <p class="mr-2">Tampilan</p>
+                        <div class="relative inline-block text-left">
+                            <button type="button"
+                                class="inline-flex justify-center items-center px-4 py-2 border border-black text-sm font-medium rounded-md text-black bg-transparent  focus:ring-blue-500"
+                                id="dropdown-button" aria-expanded="true" aria-haspopup="true">
+                                Urutkan
+                            </button>
+
+                            <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden"
+                                id="dropdown-menu" role="menu" aria-orientation="vertical"
+                                aria-labelledby="dropdown-button">
+                                <div class="py-1" role="none">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Item 1</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Item 2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Item 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <hr class="border-t border-black ">
+                </div>
+            </div>
+
+       
+        </div>
+
+        <section class="content-kitab-card max-w-6xl mx-auto mt-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 gap-y-4 overflow-hidden justify-center">
+                <!--Card 1-->
+                <div class="card-kitab rounded overflow-hidden">
+        
+                    <div class="flex flex-row items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="px-4 py-4 items-center">
+        
+                            <h6 class="content-title font-bold text-base text-black ">
+                                Ali Imran <br><span>(Keluarga Imran)</span>
+        
+                                <div class="d-inline-block caption-text">
+                                    Makkiyah (200 Ayat)
+                                </div>
+                            </h6>
+        
+        
+                        </div>
+        
+        
+                    </div>
+        
+                    <div class="px-4">
+                        <hr class="border-t border-black ">
+                    </div>
+        
+                    <div class="masuk-btn py-4 px-4">
+                        <button class="w-full btn btn-buka px-2 py-2 ">Yuk Baca</button>
+                    </div>
+        
+        
+        
+                </div>
+        
+                <!--Card 2-->
+                <div class="card-kitab rounded overflow-hidden sm:block md:block lg:hidden xl:hidden hidden">
+        
+                    <div class="flex flex-row items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="px-4 py-4 items-center">
+        
+                            <h6 class="content-title font-bold text-base text-black ">
+                                Ali Imran <br><span>(Keluarga Imran)</span>
+        
+                                <div class="d-inline-block caption-text">
+                                    Makkiyah (200 Ayat)
+                                </div>
+                            </h6>
+        
+        
+                        </div>
+        
+        
+                    </div>
+        
+                    <div class="px-4">
+                        <hr class="border-t border-black ">
+                    </div>
+        
+                    <div class="masuk-btn py-4 px-4">
+                        <button class="w-full btn btn-buka px-2 py-2 ">Yuk Baca</button>
+                    </div>
+        
+        
+        
+                </div>
+        
+       
+                
+                <!--Card 3-->
+                <div class="card-kitab rounded overflow-hidden ">
+        
+                    <div class="flex flex-row items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="px-4 py-4 items-center">
+        
+                            <h6 class="content-title font-bold text-base text-black ">
+                                Ali Imran 
+                            </h6>
+                            <span>(Keluarga Imran)</span>
+                            <div class="d-inline-block caption-text">
+                                Makkiyah (200 Ayat)
+                            </div>
+        
+        
+                        </div>
+        
+        
+                    </div>
+        
+                    <div class="px-4">
+                        <hr class="border-t border-black ">
+                    </div>
+        
+                    <div class="masuk-btn py-4 px-4">
+                        <button class="w-full btn btn-buka px-2 py-2 ">Yuk Baca</button>
+                    </div>
+        
+        
+        
+                </div>
+        
+        
+            </div>
+        </section>
+<!-- 
+        <section class="content-kitab-card max-w-6xl mx-auto flex flex-row justify-center mt-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-x-4  gap-y-4 overflow-hidden">
+             
+                <div class="card-kitab rounded overflow-hidden ">
+
+                    <div class="flex flex-row items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="px-4 py-4 items-center">
+
+                            <h6 class="content-title font-bold text-base text-black ">
+                                Ali Imran <br><span>(Keluarga Imran)</span>
+
+                                <div class="d-inline-block caption-text">
+                                    Makkiyah (200 Ayat)
+                                </div>
+                            </h6>
+
+
+                        </div>
+
+             
+                    </div>
+
+                    <div class="px-4">
+                        <hr class="border-t border-black ">
+                    </div>
+
+                    <div class="masuk-btn py-4 px-4">
+                        <button class="w-full btn btn-buka px-2 py-2 ">Yuk Baca</button>
+                    </div>
+
+
+
+                </div>
+
+        
+                <div class="card-kitab rounded overflow-hidden ">
+
+                    <div class="flex flex-row items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="px-4 py-4 items-center">
+
+                            <h6 class="content-title font-bold text-base text-black ">
+                                Ali Imran <br><span>(Keluarga Imran)</span>
+
+                                <div class="d-inline-block caption-text">
+                                    Makkiyah (200 Ayat)
+                                </div>
+                            </h6>
+
+
+                        </div>
+
+             
+                    </div>
+
+                    <div class="px-4">
+                        <hr class="border-t border-black ">
+                    </div>
+
+                    <div class="masuk-btn py-4 px-4">
+                        <button class="w-full btn btn-buka px-2 py-2 ">Yuk Baca</button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="card-kitab rounded overflow-hidden ">
+
+                    <div class="flex flex-row items-center">
+                        <div class="list-number py-4  rounded-3xl border-black items-center">
+                            <p class="font-bold text-2xl">
+                                3
+                            </p>
+                        </div>
+                        <div class="px-4 py-4 items-center">
+
+                            <h6 class="content-title font-bold text-base text-black ">
+                                Ali Imran 
+
+                               
+                            </h6>
+                            <span>(Keluarga Imran)</span>
+                            <div class="d-inline-block caption-text">
+                                Makkiyah (200 Ayat)
+                            </div>
+
+
+                        </div>
+
+             
+                    </div>
+
+                    <div class="px-4">
+                        <hr class="border-t border-black ">
+                    </div>
+
+                    <div class="masuk-btn py-4 px-4">
+                        <button class="w-full btn btn-buka px-2 py-2 ">Yuk Baca</button>
+                    </div>
+
+
+
+                </div>
+
+            
+
+            </div>
+        </section> -->
+
+    
+        <footer class="text-center mt-20">
+            Copyright 2024 - All Rights Reserved - DIGCIP
+        </footer>
+
+
+    </div>
+
+    <script>
+        const dropdownButton = document.getElementById('dropdown-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

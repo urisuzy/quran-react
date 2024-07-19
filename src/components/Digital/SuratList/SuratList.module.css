@@ -1,0 +1,49 @@
+.cardKitab {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  
+}
+
+.listNumber {
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.listTitle {
+  font-family: "El Messiri", sans-serif;
+  font-size: 28px;
+}
+
+.contentTitle {
+  font-family: "El Messiri", sans-serif;
+  letter-spacing: 2px;
+  font-size: 28px;
+
+}
+
+.captionText {
+    font-family: "El Messiri", sans-serif;
+    font-size: 12px;
+}
+
+.terjemahanText {
+    font-family: "El Messiri", sans-serif;
+    font-size: 12px;
+}
+
+.btnBuka {
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.btnBuka:hover {
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}

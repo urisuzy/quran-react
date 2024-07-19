@@ -1,0 +1,242 @@
+/*? global clearing */
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-navbar {
+  background-image: url("../images/navbar.png");
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+
+
+.navbar-nav .btn-login {
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.navbar-nav .img-logo {
+  width: 80px;
+}
+
+.navbar-nav .btn-login:hover {
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar-nav nav a.nav-link {
+  color: #092a33;
+  transition: 0.3s;
+}
+
+.navbar-nav nav a.nav-link:hover {
+  color: #2c3b3f;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-nav nav a.nav-link.active {
+  color: #2c3b3f;
+}
+
+.navbar-nav #menu-toggle:checked + #menu,
+.navbar-nav #menu-toggle:checked + #menu + #menu {
+  display: block;
+}
+
+
+.content-title {
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.content-title .title-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.card-kitab .caption-text {
+  font-family: "El Messiri", sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.content-footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-footer footer {
+  color: #000;
+  font-size: 14px;
+}
+
+.content-card .card-kitab {
+  background-color: #a79191;
+  border-radius: 10px;
+}
+
+.content-card .content-title {
+  font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+}
+
+.content-card .content-caption {
+  font-family: "El Messiri", sans-serif;
+  font-size: 16px;
+}
+
+.content-card .btn-masuk {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+  font-family: "El Messiri", sans-serif;
+  font-size: 24px;
+}
+
+.content-card .btn-masuk:hover {
+  background-color: #fffbf6;
+}
+
+.content-card .card-kitab-dua {
+  background-color: #4bc8d0;
+  border-radius: 10px;
+}
+
+.content-card .card-kitab-tiga {
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.content-form .btn-login {
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.content-form .btn-login:hover {
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}
+
+footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-kitab{
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 100%;
+}
+
+.info-kitab .info-kitab-card {
+  background-color:  #A79191;
+  width: 100%;
+  height: 100%;
+}
+
+.info-kitab .info-kitab-title .info-kitab-card .info-title{
+  font-size: 38px;
+  font-family: 'El Messiri', sans-serif;
+ 
+}
+
+.info-kitab .info-kitab-title .info-kitab-card .info-caption{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 16px;
+}
+
+.info-kitab .form-input{
+  padding: 16px;
+  border: 1px solid #000;
+}
+
+.info-kitab .btn-search{
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.info-kitab .btn-search:hover{
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.content-kitab-card .card-kitab {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-kitab-card .list-number {
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid #000;
+
+}
+
+.content-kitab-card .list-number p {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 30px;
+}
+
+.content-kitab-card .card-kitab .content-title{
+  font-family: 'El Messiri', sans-serif;
+  letter-spacing: 2px;
+  font-size: 48px;
+  line-height: 1;
+ 
+}
+
+.content-kitab-card .card-kitab .content-caption{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 24px;
+}
+
+.content-kitab-card .card-kitab .content-title .caption-text,
+.content-kitab-card .card-kitab .content-title span
+{
+  font-family: 'El Messiri', sans-serif;
+  font-size: 16px;
+}
+
+.content-kitab-card .card-kitab .btn-buka{
+  background-color: transparent;
+  color: #008541;
+  border: 1px solid #008541;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.content-kitab-card .card-kitab .btn-buka:hover{
+  background-color: #106b3c;
+  color: #fff;
+  transition: 0.3s;
+}
+

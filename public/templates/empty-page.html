@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scripts/style.css" />
+    <link rel="stylesheet" href="assets/scripts/detail.css" />
+  </head>
+
+  <body>
+    <!-- navigasi -->
+    
+    <div class="section-navbar border-box transition-all duration-500 linear lg:px-24 md:px-20 px-8 py-8 ">
+        <div class="navbar-nav">
+        <div
+            class="container mx-auto flex flex-wrap flex-row items-center justify-between"
+        >
+            <a href="" class="flex font-medium items-center">
+            <img src="assets/images/logo.png" class="img-logo" alt="img-logo" />
+            </a>
+            <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+            <img src="assets/images/burger.svg" alt="">
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div
+            class="hidden lg:flex lg:items-center lg:w-auto w-full relative"
+            id="menu"
+            >
+            <div class="relative">
+                <button
+                class="btn-login text-white items-center border-0 py-3 px-8 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0"
+                id="dropdown-toggle"
+                >
+                Muhammad Dikky
+                </button>
+                <ul
+                class="absolute hidden text-base font-medium bg-white border border-gray-200 rounded-xl py-2 mt-2 w-36"
+                id="dropdown-menu"
+                >
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Profile</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Simpan Ayat</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Logout</a></li>
+                </ul>
+            </div>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+        <!--  -->
+
+    <div class="empty-page flex flex-col justify-center items-center text-center  py-28 px-8">
+       
+        <img src="assets/images/empty.png" alt="empty-img" class="text-center">
+        <p class="text-sky-400 mt-4 text-4xl font-medium">
+            List Al-Quran Kosong
+        </p>
+        <button
+          class="btn btn-kembali text-white font-bold items-center border-0 py-3 px-8 focus:outline-none rounded-2xl font-medium text-base mt-6  bg-blue-700 hover:bg-blue-500"
+        >
+          Kembali ke Menu
+        </button>
+
+
+ 
+
+    </div>
+    
+    <script>
+        const dropdownToggle = document.getElementById('dropdown-toggle');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+    
+        dropdownToggle.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    
+  </body>
+</html>

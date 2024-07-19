@@ -1,0 +1,17 @@
+.listNumber {
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.number {
+  font-family: "El Messiri", sans-serif;
+  font-size: 30px;
+}
+
+.arabText {
+  background-color: #fff;
+  box-shadow: 10px;
+}
+
+
